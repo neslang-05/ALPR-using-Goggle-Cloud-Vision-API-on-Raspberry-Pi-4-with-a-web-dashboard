@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Detection</title>
+</head>
+<body>
+  <h1>Car Detection</h1>
+  <div id="car-status">
+    <p>Status: </p>
+  </div>
+  <script>
+    const socket = new WebSocket('ws://localhost:65432');
+
+    socket.onopen = function(event) {
+      console.log('WebSocket connection opened');
+    };
+
+    socket.onmessage = function(event) {
+      const data = JSON.parse(event.data);
+      document.getElementById('car-status').innerHTML = `
+        <p>Status: ${data.car_present ? 'Car Present' : 'No Car'}</p>
+      `;
+    };
+
+    socket.onclose = function(event) {
+      console.log('WebSocket connection closed');
+    };
+  </script>
+</body>
+</html>

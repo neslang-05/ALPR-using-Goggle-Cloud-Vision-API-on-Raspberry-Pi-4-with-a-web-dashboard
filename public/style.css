@@ -1,0 +1,118 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+#slots {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#images{
+    flex: 1.5;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#ocr{
+    flex: 1;
+    padding: 15px;
+}
+#csv{
+    flex: 2;
+    padding: 15px;
+}
+#images, #ocr, #csv {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 30%;
+    margin: 15px;
+    min-width: 280px;
+}
+
+#images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#results p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: black;
+    transform: translate(-5px, -5px);
+    box-shadow: 10px 10px 0px 0px rgb(90, 90, 90);
+    transition: transform 0.2s ease-in-out , background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+a button {
+    margin-top: 10px;
+}

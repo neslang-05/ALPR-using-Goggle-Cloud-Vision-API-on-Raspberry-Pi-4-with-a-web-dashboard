@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPR Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h1>ALPR Dashboard</h1>
+        <div id="slots">Loading slots...</div>
+    </div>
+    <div id="content">
+        <div id="images">
+            <h2>Captured Images</h2>
+            <img id="capturedImage" src="/captured_image" alt="Captured Image">
+            <img id="licensePlateImage" src="/license_plate" alt="License Plate Image">
+        </div>
+        <div id="ocr">
+            <h2>OCR Results</h2>
+            <div id="results">
+                <p><strong>License Plate:</strong> <span id="license-plate">Loading...</span></p>
+                <p><strong>Timestamp:</strong> <span id="timestamp">Loading...</span></p>
+                <p><strong>Time Parked:</strong> <span id="time-parked">Loading...</span></p>
+            </div>
+            <h2>Use this to perform OCR Manually</h2>
+            <button id="runOCRButton" onclick="runOCR()">Perform OCR</button>
+            <button onclick="refreshData()">Refresh</button>
+        </div>
+        <div id="csv">
+            <h2>CSV Data</h2>
+            <table id="csvTable">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>License Plate</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be populated here by JavaScript -->
+                </tbody>
+            </table>
+            <a href="/files/license_plates.csv" download>
+                <button>Download CSV</button>
+            </a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
