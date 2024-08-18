@@ -8,7 +8,7 @@ The system is comprised of the following components:
 
 1. **Raspberry Pi:** Serves as the primary processing unit, running the ALPR application and interfacing with hardware components.
 2. **Camera:** Captures images of vehicles.
-3. **Ultrasonic Sensor:** Detects the presence of a vehicle, triggering the image capture process.
+3. **IR Sensor:** Detects the presence of a vehicle, triggering the image capture process.
 4. **Servo Motor:** Controls a gate or barrier based on license plate recognition results (optional).
 5. **Google Cloud Platform:**
     - **Cloud Storage:** Provides storage for captured images.
