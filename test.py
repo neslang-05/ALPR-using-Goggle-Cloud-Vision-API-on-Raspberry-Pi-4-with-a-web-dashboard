@@ -251,7 +251,6 @@ if __name__ == "__main__":
 
                 detected_license_plate_image = detect_license_plate(image_path)
                 if detected_license_plate_image is not None:
-                    move_servo_to_90_degrees()
                     logging.info("License detected")
                     license_plate_text, ocr_full_text = perform_ocr_with_gcp(detected_license_plate_image)
                     if license_plate_text:
@@ -259,6 +258,7 @@ if __name__ == "__main__":
                         corrected_text = correct_errors(filtered_text)
                         logging.info("License Plate: %s", corrected_text)
                         matched, time_parked = compare_with_previous_data(corrected_text)
+                        move_servo_to_90_degrees()
                         if matched:
                             logging.info("License data matched. Taking appropriate action...")
                             log_to_json(corrected_text, time_parked)  # Log to JSON with time parked
