@@ -84,4 +84,20 @@ function autoRefresh() {
         // Refresh the available slots
         updateSlots();
     }, 3000); // 3000 milliseconds = 3 seconds
+
+    // Live Stream Logic
+    const startStreamButton = document.getElementById('startStream');
+    const stopStreamButton = document.getElementById('stopStream');
+    const liveStreamFrame = document.getElementById('liveStream');
+    const liveStreamUrl = 'http://192.168.29.207:4747/';
+
+    startStreamButton.addEventListener('click', function() {
+        liveStreamFrame.src = liveStreamUrl;
+        liveStreamFrame.style.display = 'block';
+    });
+
+    stopStreamButton.addEventListener('click', function() {
+        liveStreamFrame.src = 'http://192.168.29.207:4747/';
+        liveStreamFrame.style.display = 'none';
+    });
 }
