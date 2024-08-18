@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPR Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h1>ALPR Dashboard</h1>
+        <!-- <div id="slots">Loading slots...</div> -->
+        <button><a href="index.html">Home</a></button>
+    </div>
+    <div id="content">
+        <div id="images">
+            <h2>Captured Images</h2>
+            <img id="capturedImage" src="/captured_image" alt="Captured Image"><br><br>
+            <h2>Croped License Plate Image</h2>
+            <img id="licensePlateImage" src="/license_plate" alt="License Plate Image">
+        </div>
+        <div id="ocr">
+            <h2>OCR Results</h2>
+            <div id="results">
+                <p><strong>License Plate:</strong> <span id="license-plate">Loading...</span></p><br>
+                <p><strong>Timestamp:</strong> <span id="timestamp">Loading...</span></p><br>
+                <p><strong>Time Parked:</strong> <span id="time-parked">Loading...</span></p><br>
+            </div>
+            <h2>Use this to perform OCR Manually</h2>
+            <div class="btns">
+                <button id="runOCRButton" onclick="runOCR()">Perform OCR</button>
+                <!-- <button onclick="refreshData()">Refresh</button> -->
+            </div>    
+        </div>
+        <div id="csv">
+            <h2>CSV Data</h2>
+            <table id="csvTable">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>License Plate</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be populated here by JavaScript -->
+                </tbody>
+            </table>
+            <br><br><br>
+            <div class="btns">
+                <button><a href="/csv" download>
+                    Download CSV
+                </a></button>
+                <button><a href="/json" download>
+                    Download JSON
+                </a></button>
+            </div>
+        </div>
+        <div class="stream">
+            <h2>Live Preview of the parking lot</h2>
+            <iframe id="liveStream" src="" style="display: none; width: 100%; height: 500px; border: 2px solid #b0acac;"></iframe>
+            <br><br>
+            <div class="mt-3">
+              <button id="startStream">Start Live Feed</button>
+              <button id="stopStream">Stop Live Feed</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
