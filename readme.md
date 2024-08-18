@@ -17,7 +17,7 @@ The system is comprised of the following components:
 
 ## Workflow
 
-1. **Vehicle Detection:** The ultrasonic sensor continuously monitors for a vehicle's presence. Upon detection, it signals the Raspberry Pi to capture an image.
+1. **Vehicle Detection:** The infrared sensor continuously monitors for a vehicle's presence. Upon detection, it signals the Raspberry Pi to capture an image.
 2. **Image Capture:** The camera, triggered by the Raspberry Pi, captures an image of the vehicle.
 3. **Image Upload:** The captured image is transmitted to a designated Google Cloud Storage bucket.
 4. **License Plate Detection:** Advanced image processing algorithms pinpoint the region within the image containing the license plate.
