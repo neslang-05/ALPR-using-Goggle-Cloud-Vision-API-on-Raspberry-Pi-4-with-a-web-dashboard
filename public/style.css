@@ -57,8 +57,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     width: 30%;
+    height: 70%;
     margin: 15px;
     min-width: 280px;
+}
+#licensePlateImage{
+    width: auto;
+    height: 100px;
 }
 
 .stream{
@@ -175,4 +180,21 @@ a button {
     margin-top: 10px;
 }
 
+main{
+   margin: 0px;
+   padding: 0px;
+   background-image: url('/images/hero-img.jpg');
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-size: cover;
+}
 
+.hero-section{
+    
+}
+footer{
+    background-color: #041335;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}   
