@@ -188,10 +188,15 @@ main{
    background-attachment: scroll;
    background-size: cover;
 }
+/* .hero-section{
+    background-image: url('/images/hero-img.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+} */
 
-.hero-section{
-    
-}
 footer{
     background-color: #041335;
     color: white;

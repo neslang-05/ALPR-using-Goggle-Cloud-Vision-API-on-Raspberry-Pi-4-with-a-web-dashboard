@@ -10,13 +10,15 @@
     <div class="img-head">
         <div id="header">
             <h1>ALPR Dashboard</h1>
-            <button><a href=""><img src="/images/git-w.svg" alt="git-logo" height="20px" width="20px" target="_blank">Edit on Github</a></button>
+            <button><a href="https://github.com/neslang-05/ALPR-using-Goggle-Cloud-Vision-API-on-Raspberry-Pi-4-with-a-web-dashboard.git"><img src="/images/git-w.svg" alt="git-logo" height="20px" width="20px" target="_blank">Edit on Github</a></button>
         </div>
         <div class="hero-section">
-            <h1 class="hero-text">ALPR(Automatic License Plate Recognition) with <br>Google Cloud Vision API on Raspberry Pi 4</h1>
-            <button><a href="main.html" target="_blank">Visit Dashboard</a></button>
-            <button><a href="learn.html" target="_blank">Documentation</a></button>
-            <button><a href="https://github.com/neslang-05/ALPR-using-Goggle-Cloud-Vision-API-on-Raspberry-Pi-4-with-a-web-dashboard.git" target="_blank">Visit Github Page</a></button>
+            <h1 class="hero-text">ALPR(Automatic License Plate Recognition) with <br>Google Cloud Vision API on Raspberry Pi 4</h1><br>
+            <div class="btns">
+                <button id="dash"><a href="main.html" target="_blank">Visit Dashboard</a></button>
+                <button id="doc"><a href="learn.html" target="_blank">Documentation</a></button>
+                <button id="git"><a href="https://github.com/neslang-05/ALPR-using-Goggle-Cloud-Vision-API-on-Raspberry-Pi-4-with-a-web-dashboard.git" target="_blank">Visit Github Page</a></button>
+            </div>
         </div>
     </div>
     <main>
@@ -24,30 +26,36 @@
             <!-- Write something about the project-->
              <!-- Add link to the youtube video-->
 
-             <h2>About Project</h2>
-            <p>Welcome to the Smart Parking System powered by Automatic License Plate Recognition (ALPR)! Our innovative solution leverages the capabilities of Google Cloud Vision API on a Raspberry Pi 4 to provide efficient and automated parking management.</p>
+            <div class="left">
+                <h2>About Project</h2>
+                <p>Welcome to the Smart Parking System powered by Automatic License Plate Recognition (ALPR)! Our innovative solution leverages the capabilities of Google Cloud Vision API on a Raspberry Pi 4 to provide efficient and automated parking management.</p>
+                
+                <h3>How it Works:</h3>
+                <ol>
+                    <li>Vehicle Detection: An ultrasonic sensor constantly monitors the parking lot entrance, detecting arriving vehicles.</li>
+                    <li>Image Capture: Upon vehicle detection, a Raspberry Pi Camera Module captures a high-resolution image.</li>
+                    <li>License Plate Recognition: The image is processed using advanced image recognition algorithms, powered by Google Cloud Vision API, to accurately extract the license plate number.</li>
+                    <li>Data Logging and Display: The recognized license plate number, along with the timestamp, is securely logged. Our real-time dashboard provides an intuitive interface to monitor parking activity, including entry and exit times for each vehicle.</li>
+                </ol>
+                
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>Automated License Plate Recognition</li>
+                    <li>Real-time Parking Monitoring</li>
+                    <li>Secure Data Logging</li>
+                    <li>User-Friendly Dashboard</li>
+                    <li>Scalable and Efficient</li>
+                </ul>
+                <h3>Watch the Demo:</h3>
+                <p>See the system in action! Click the link below to watch a short demo video.</p>
+            </div>
+            <div class="right">
+                <iframe width="480" height="270" src="https://www.youtube.com/embed/Iv8YO5BXCAQ?si=qXIEAjvXZvTA5mtq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
+                <iframe width="480" height="270" src="https://www.youtube.com/embed/H6RlWqL2W8Y?si=OoW1UcTfl_5Fg_fJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             
-            <h3>How it Works:</h3>
-            <ol>
-                <li>Vehicle Detection: An ultrasonic sensor constantly monitors the parking lot entrance, detecting arriving vehicles.</li>
-                <li>Image Capture: Upon vehicle detection, a Raspberry Pi Camera Module captures a high-resolution image.</li>
-                <li>License Plate Recognition: The image is processed using advanced image recognition algorithms, powered by Google Cloud Vision API, to accurately extract the license plate number.</li>
-                <li>Data Logging and Display: The recognized license plate number, along with the timestamp, is securely logged. Our real-time dashboard provides an intuitive interface to monitor parking activity, including entry and exit times for each vehicle.</li>
-            </ol>
-            
-            <h3>Key Features:</h3>
-            <ul>
-                <li>Automated License Plate Recognition</li>
-                <li>Real-time Parking Monitoring</li>
-                <li>Secure Data Logging</li>
-                <li>User-Friendly Dashboard</li>
-                <li>Scalable and Efficient</li>
-            </ul>
-
-            <h3>Watch the Demo:</h3> 
-            <p>See the system in action! Click the link below to watch a short demo video.</p>
-            <a href="[Your YouTube video Link]" target="_blank">Watch Demo on YouTube</a> 
-        </div>
+        </div>  
         <div class="contri">
             <!-- Add details of contributors of this project in a card format with linked in and instgram , github details-->
             <h2>Developers</h2>
@@ -56,8 +64,8 @@
                     <img src="/images/joy.png" alt="Joymangol">
                     <div class="content">
                         <h3>Joymangol Chingangbam</h3>
-                        <p>UI/UX  Designer & FrontEnd Devoloper
-                        </p>
+                        <p>UI/UX  Designer & FrontEnd Devoloper</p>
+                        <p>B.Tech CSE Student at MTU, 3rd Year</p>
                         <ul class="social-icons">
                             <li><a href="mailto:neslang.in@gmail.com" target="_blank"><img src="/images/mail.svg" alt="GitHub" height="20px" width="20px"></a></li>
                             <li><a href="https://github.com/neslang-05" target="_blank"><img src="/images/git.svg" alt="GitHub" height="20px" width="20px"></a></li>
@@ -70,7 +78,8 @@
                     <img src="/images/nilla.png" alt="Nilambar">
                     <div class="content">
                         <h3>Nilambar Elangbam</h3>
-                        <p>Full Stack Devoloper & System Designer</p>
+                        <!-- <p>Full Stack Devoloper & System Designer</p>
+                        <p>B.Tech CSE Student at MTU, 3rd Year</p> -->
                         <ul class="social-icons">
                             <li><a href="mailto:neslang.in@gmail.com" target="_blank"><img src="/images/mail.svg" alt="GitHub" height="20px" width="20px"></a></li>
                             <li><a href="https://github.com/neslang-05" target="_blank"><img src="/images/git.svg" alt="GitHub" height="20px" width="20px"></a></li>
@@ -83,7 +92,8 @@
                     <img src="/images/llb.png" alt="Llhanba">
                     <div class="content">
                         <h3>Llhanba Laishram</h3>
-                        <p>Hardware Devoloper & Designer</p>
+                        <!-- <p>Hardware Devoloper & Designer</p>
+                        <p>B.Tech EE Student at MTU, 3rd Year</p> -->
                         <ul class="social-icons">
                             <li><a href="mailto:neslang.in@gmail.com" target="_blank"><img src="/images/mail.svg" alt="GitHub" height="20px" width="20px"></a></li>
                             <li><a href="https://github.com/neslang-05" target="_blank"><img src="/images/git.svg" alt="GitHub" height="20px" width="20px"></a></li>
