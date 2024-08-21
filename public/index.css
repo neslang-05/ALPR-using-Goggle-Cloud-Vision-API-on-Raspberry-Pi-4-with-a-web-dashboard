@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+*{
+    box-sizing: border-box;
+    outline: 1px soild limegreen !important;
+}
 /* Basic Styles */
 body {
     margin: 0;
