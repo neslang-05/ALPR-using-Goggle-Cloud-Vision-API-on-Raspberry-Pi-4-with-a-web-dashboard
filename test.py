@@ -135,7 +135,17 @@ def correct_errors(text):
     text = text.replace("O", "0")
     text = text.replace("I", "1")
     text = text.replace("B", "8")
+    text = text.replace("G", "6")
+    text = text.replace("S", "5")
+    text = text.replace("Z", "2")
+    text = text.replace("D", "0") # Sometimes D can be mistaken for 0
+    text = text.replace("Q", "0") # Sometimes Q can be mistaken for 0
+    text = text.replace("L", "1") # Sometimes L can be mistaken for 1
+    text = text.replace("A", "4") # Sometimes A can be mistaken for 4
+    text = text.replace("T", "7") # Sometimes T can be mistaken for 7
+    text = text.upper() # Ensuring the text is in uppercase
     return text
+
 
 # --- CSV Logging ---
 def append_to_csv(data, filename=os.path.join(FILES_DIR, "license_plates.csv")):
